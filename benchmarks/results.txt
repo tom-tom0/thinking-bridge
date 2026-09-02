@@ -1,14 +1,14 @@
 benchmark                                                           best(ms)  median(ms)
 ------------------------------------------------------------------  --------  ----------
-PrefixGuard.check, 100-message history (restore+full check)            1.122       1.181
-PrefixGuard.check, 1000-message history (restore+full check)          10.918      12.917
-PrefixGuard.check, 5000-message history (restore+full check)          53.974      66.588
-PrefixGuard.check, steady-state append (1000+ msgs)                   11.083      11.715
-predict_drops, 100-message history                                     0.159       0.164
-predict_drops, 1000-message history                                    1.553       1.604
-predict_drops, 5000-message history                                    7.366       7.756
-parse_input_transformations, 1000 entries                              0.960       0.997
-Full session: 100 turns, model switch every 10 (bridge+guard+mock)     6.428       6.428
-mock server alone, 100-msg body (baseline)                            13.756      14.310
-bridge.create, same body (baseline + library overhead)                14.591      14.790
-=> library overhead per request                                        0.835       0.480
+PrefixGuard.check, 100-message history (restore+full check)            1.073       1.117
+PrefixGuard.check, 1000-message history (restore+full check)           9.835      10.249
+PrefixGuard.check, 5000-message history (restore+full check)          49.472      51.517
+PrefixGuard.check, steady-state append (1000+ msgs)                    9.895      10.400
+predict_drops, 100-message history                                     0.152       0.154
+predict_drops, 1000-message history                                    1.521       1.556
+predict_drops, 5000-message history                                    8.131       9.276
+parse_input_transformations, 1000 entries                              1.094       1.110
+Full session: 100 turns, model switch every 10 (bridge+guard+mock)     6.436       6.436
+mock server alone, 100-msg body (baseline)                            14.030      15.419
+bridge.create, same body (baseline + library overhead)                13.895      14.783
+=> library overhead per request                                       -0.135      -0.636
